@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border border-white/20 dark:border-gray-800/50;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+/* React Quill Dark Mode Fixes */
+.dark .ql-toolbar {
+  @apply bg-gray-800 border-gray-700 text-white;
+}
+.dark .ql-container {
+  @apply border-gray-700 text-white;
+}
+.dark .ql-editor {
+  @apply text-white;
+}
+.dark .ql-stroke {
+  @apply stroke-white;
+}
+.dark .ql-fill {
+  @apply fill-white;
+}
+.dark .ql-picker {
+  @apply text-white;
+}
